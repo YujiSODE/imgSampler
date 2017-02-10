@@ -1,0 +1,43 @@
+<!-- imgSampler.html -->
+<!-- HTML based graphical sampling in order to generate values following an empirical distribution. -->
+<!DOCTYPE html><html lang="en">
+    <head>
+      <meta charset="utf8">
+      <title>imgSampler.html</title>
+      <script type="text/javascript" src="./draw2Sample.js"></script>
+    </head>
+    <body>
+          <form id="imgFrm">
+            <label>Image path:<input type="text" id="imgPath"></label>
+            <input type="button" value="Load" id="imgInputB">
+            <input type="button" value="Run" id="imgRunB">
+            <p id="imgFrmSize">Image size:</p>
+            <br><img src="./defaultImg.png" alt="IMAGE" id="_IMAGE">
+          </form>
+          <script type="text/javascript">
+              //function that loads a given image file by file path, and shows this image
+              (function(){
+                var slf=window,
+                    pth=slf.document.getElementById('imgPath'),
+                    IMG=slf.document.getElementById('_IMAGE'),
+                    B=slf.document.getElementById('imgInputB'),
+                    Run=slf.document.getElementById('imgRunB'),
+                    size=slf.document.getElementById('imgFrmSize'),
+                    _INPUT=function(){
+                        IMG.src=(/^[/.:_\-a-zA-Z0-9]+(?:\.png|\.gif|\.jpg|\.jpeg|\.bmp|\.svg)$/.test(pth.value))?pth.value:'./defaultImg.png';
+                        size.innerHTML='Image size:'+IMG.width+'x'+IMG.height+' px';
+                    };
+                size.innerHTML='Image size:400x400 px';
+                B.addEventListener('click',_INPUT,true);
+                Run.addEventListener('click',draw2Sample,true);
+              }());
+          </script>
+    </body>
+</html>
+<!-- /*imgSampler.html*/-->
+<!-- /*     Copyright (c) 2017 Yuji SODE <yuji.sode@gmail.com>*/ -->
+<!-- /*    This software is released under the MIT License.*/ -->
+<!-- /*    See LICENSE or http://opensource.org/licenses/mit-license.php*/ -->
+<!-- /*===Library list===*/ -->
+<!-- /* - HTML framework is based on imgFrm.html (Yuji SODE,2017): MIT License*/ -->
+<!-- /* - draw2Sample-1.2.1/draw2Sample.js (Yuji SODE,2016): MIT License*/ -->
