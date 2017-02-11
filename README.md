@@ -17,7 +17,7 @@ ______
 2. __"Load" button;__ it loads a target image file.
 3. __"Run" button;__ it calls graphical sampling interface.
 
-About details of graphical sampling, please see `draw2Sample_README.md` or [draw2Sample](https://github.com/YujiSODE/draw2Sample/README.md).
+About details of graphical sampling, please see `draw2Sample_README.md` or [draw2Sample](https://github.com/YujiSODE/draw2Sample/blob/master/README.md).
 
 ## Library list
 * HTML framework is based on imgFrm.html (Yuji SODE,2017): MIT License; https://github.com/YujiSODE/imgFrm
