@@ -7,7 +7,12 @@ https://github.com/YujiSODE/imgSampler
 >See LICENSE or http://opensource.org/licenses/mit-license.php
 ______
 
-##
+##Script
+* `imgSampler.html`
+* `draw2Sample.js`
+* `defaultImg.png`
+
+##How to use
 
 ## Library list
 * HTML framework is based on imgFrm.html (Yuji SODE,2017): MIT License; https://github.com/YujiSODE/imgFrm
