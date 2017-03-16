@@ -7,12 +7,12 @@ https://github.com/YujiSODE/imgSampler
 >See LICENSE or http://opensource.org/licenses/mit-license.php
 ______
 
-##Script
+## Script
 * `imgSampler.html`
 * `draw2Sample.js`
 * `defaultImg.png`
 
-##How to use
+## How to use
 1. __"Image path":__ input for a file name or a path to target image.
 2. __"Load" button;__ it loads a target image file.
 3. __"Run" button;__ it calls graphical sampling interface.
